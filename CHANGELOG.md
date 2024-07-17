@@ -1,3 +1,11 @@
+# Atualizações
+
+## 2.1.1 - 17-07-2024
+
+Atualizado Pacotes;
+Ativado Windows para Testes;
+Atualizado para Flutter 3.22, dart 3.4.3;
+
 ## 2.1.0 - 2021-07-08
 
 * Fixed 12h display format.

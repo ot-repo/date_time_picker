@@ -843,9 +843,11 @@ class _DateTimePickerState extends FormFieldState<String> {
     );
 
     final languageCode = widget.locale?.languageCode;
+    String selectedDate = "";
     if (ldDatePicked != null) {
       _sDate = DateFormat('yyyy-MM-dd', languageCode).format(ldDatePicked);
       _dDate = ldDatePicked;
+      selectedDate = _sDate;
 
       final ltTimePicked = await showTimePicker(
         context: context,
@@ -895,7 +897,7 @@ class _DateTimePickerState extends FormFieldState<String> {
       }
 
       final lsOldValue = _sValue;
-      _sValue = '$_sDate $_sTime';
+      _sValue = '$selectedDate $_sTime';
       _sValue = _sValue.trim();
 
       if (widget.dateMask != null && widget.dateMask != '') {

@@ -1,5 +1,9 @@
 # Atualizações
 
+## 2.1.2 - 10-09-2024
+
+Corrigido preenchimento data no tipo datetime;
+
 ## 2.1.1 - 17-07-2024
 
 Atualizado Pacotes;
